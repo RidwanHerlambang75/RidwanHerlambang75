@@ -497,8 +497,8 @@
                 <div class="info-value">Mahasiswa Aktif</div>
             </div>
             <div class="info-item">
-                <div class="info-label">Jurusan</div>
-                <div class="info-value">Teknik Komputer</div>
+                <div class="info-label">Bidang</div>
+                <div class="info-value">Teknologi Informasi</div>
             </div>
         </div>
     </div>
@@ -528,7 +528,7 @@
 
         <div class="skill">
             <div class="skill-header">
-                <span class="skill-name">Arduino &amp; Mikrokontroler</span>
+                <span class="skill-name">UI / UX Design</span>
                 <span class="skill-percent">80%</span>
             </div>
             <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
@@ -536,10 +536,10 @@
 
         <div class="skill">
             <div class="skill-header">
-                <span class="skill-name">Jaringan Komputer</span>
-                <span class="skill-percent">78%</span>
+                <span class="skill-name">Problem Solving</span>
+                <span class="skill-percent">85%</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
         </div>
     </div>
 
@@ -551,11 +551,11 @@
         </div>
         <div class="hobi-list">
             <span class="hobi-tag">💻 Coding</span>
-            <span class="hobi-tag">🔌 Elektronika</span>
             <span class="hobi-tag">🌐 Web Dev</span>
             <span class="hobi-tag">📚 Membaca</span>
             <span class="hobi-tag">🎮 Gaming</span>
             <span class="hobi-tag">🎵 Musik</span>
+            <span class="hobi-tag">🎨 Desain</span>
             <span class="hobi-tag">🚀 Teknologi</span>
         </div>
     </div>
@@ -664,9 +664,9 @@
         var typedEl = document.getElementById('typed');
         if (typedEl) {
             var texts = [
-                'Mahasiswa Teknik Komputer',
+                'Mahasiswa Teknologi Informasi',
                 'Web Developer Enthusiast',
-                'Embedded System Learner',
+                'UI/UX Learner',
                 'NIM 2405110042'
             ];
             var ti = 0, ci = 0, del = false;
@@ -715,6 +715,7 @@
             }, { threshold: 0.15 });
             cards.forEach(function (c) { obs.observe(c); });
         } else {
+            // Fallback: langsung tampil kalau browser lama
             cards.forEach(function (c) {
                 c.classList.add('reveal');
                 var bars = c.querySelectorAll('.skill-fill');
